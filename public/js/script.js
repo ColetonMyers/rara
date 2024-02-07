@@ -1,17 +1,17 @@
 const answers = [
     "Are you sure?",
     "Are you really sure??",
-    "Are you really realy sure???",
+    "Are you really really sure???",
     "Think again?",
     "Don't believe in second chances?",
     "Why are you being so cold?",
     "Maybe we can talk about it?",
-    "I am not going to ask again!",
-    "Ok now this is hurting my feelings!",
-    "You are now just being mean!",
+    "I am not going to ask again",
+    "Ok now this is hurting my feelings",
+    "You are now just being mean",
     "Why are you doing this to me?",
-    "Please give me a chance!",
-    "I am begging you to stop!",
+    "sad",
+    "much sad",
     "Ok, Lets just start over.."
 ]
 
@@ -51,10 +51,15 @@ yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
     banner.src = "./public/images/yes.gif";
-    // hide buttons div
+    // hide buttons & title div
     let buttons = document.getElementsByClassName('buttons')[0];
     buttons.style.display = "none";
     // show message div
     let message = document.getElementsByClassName('message')[0];
     message.style.display = "block";
+    // change background
+    document.body.background="./public/images/yes2.gif";
+    // hide the question section
+    let questionSection = document.getElementsByClassName('body')[0];
+    questionSection.style.display = "none";
 });

@@ -68,6 +68,15 @@ body {
 
 .message {
     display: none;
+    background-color: white;
+    padding: 16px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    border-radius: 16px;
+}
+
+.title {
+    display: flex;
 }
 
 .banner-gif {
@@ -78,6 +87,7 @@ body {
     img {
         width: auto;
         height: 250px;
+        border-radius: 5px;
     }
 }
 
