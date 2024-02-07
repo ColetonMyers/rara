@@ -7,8 +7,8 @@ const answers = [
     "Why so cold?",
     "Maybe we can talk about it?",
     "I am not going to ask again",
+    "FOOT WARNING ACTIVATED",
     "Ok now this is hurting my feelings",
-    "You are now just being mean",
     "Why are you doing this to me?",
     "sad",
     "much sad",
@@ -34,16 +34,25 @@ no_button.addEventListener('click', () => {
     yes_button.style.width = `${size*1.5}px`;
     let total = answers.length;
     // change button text
-    if (i < total - 1) {
+    if (i < total - 6) {
         no_button.innerHTML = answers[i];
         i++;
-    } else if (i === total - 1) {
+    } else if (i === total - 6) {
+        document.body.background="./public/images/foot.gif";
+        no_button.innerHTML = answers[i];
+        i++;
+    }  else if (i < total - 1) {
+        document.body.background="./public/images/foot.gif";
+        no_button.innerHTML = answers[i];
+        i++;
+    }   else if (i === total - 1) {
         alert(answers[i]);
         i = 0;
         no_button.innerHTML = "No";
         yes_button.style.height = "50px";
         yes_button.style.width = "50px";
         size = 50;
+        document.body.background="none";
     }
 });
 
