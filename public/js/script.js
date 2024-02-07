@@ -3,8 +3,8 @@ const answers = [
     "Are you really sure??",
     "Are you really really sure???",
     "Think again?",
-    "Don't believe in second chances?",
-    "Why are you being so cold?",
+    "I'm giving you one more chance...",
+    "Why so cold?",
     "Maybe we can talk about it?",
     "I am not going to ask again",
     "Ok now this is hurting my feelings",
@@ -60,6 +60,9 @@ yes_button.addEventListener('click', () => {
     // change background
     document.body.background="./public/images/yes2.gif";
     // hide the question section
-    let questionSection = document.getElementsByClassName('body')[0];
+    let questionSection = document.getElementsByClassName('title')[0];
     questionSection.style.display = "none";
+    // insert break
+    let insertbreak = document.getElementsByClassName('break')[0];
+    insertbreak.style.display = "flex";
 });

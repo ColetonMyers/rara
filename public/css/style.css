@@ -79,6 +79,10 @@ body {
     display: flex;
 }
 
+.break {
+    display: none;
+}
+
 .banner-gif {
     width: 100%;
     height: auto;
