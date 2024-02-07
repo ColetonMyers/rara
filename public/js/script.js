@@ -24,14 +24,14 @@ let clicks = 0;
 no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
-    if (clicks === 0) banner.src = "./public/images/no.gif";
+    if (clicks === 0) banner.src = "./public/images/no2.gif";
     clicks++;
     // increase button height and width gradually to 250px
     const sizes = [40, 50, 30, 35, 45]
     const random = Math.floor(Math.random() * sizes.length);
     size += sizes[random]
     yes_button.style.height = `${size}px`;
-    yes_button.style.width = `${size}px`;
+    yes_button.style.width = `${size*1.5}px`;
     let total = answers.length;
     // change button text
     if (i < total - 1) {
