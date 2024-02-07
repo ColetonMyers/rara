@@ -4,10 +4,8 @@ const answers = [
     "Are you really really sure???",
     "Think again?",
     "I'm giving you one more chance...",
-    "Why so cold?",
-    "Maybe we can talk about it?",
-    "I am not going to ask again",
     "FOOT WARNING ACTIVATED",
+    "I am not going to ask again",
     "Ok now this is hurting my feelings",
     "Why are you doing this to me?",
     "sad",
@@ -34,7 +32,7 @@ no_button.addEventListener('click', () => {
     yes_button.style.width = `${size*1.5}px`;
     let total = answers.length;
     // change button text
-    if (i < total - 6) {
+    if (i < total - 7) {
         no_button.innerHTML = answers[i];
         i++;
     } else if (i === total - 6) {
